@@ -1,9 +1,9 @@
 from django.http import HttpResponse
-from django.urls import path
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse('Home')
+    return render(request, 'recipes/home.html')
 
 
 def contact(request):
